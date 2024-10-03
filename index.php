@@ -47,7 +47,7 @@
 
         if(empty($name) || empty($email) || empty($gender) ||  empty($city) || empty($number)){
         //   // header('Location: ../index.php');
-          echo "<script>window.location.href = 'index.php';</script>";
+          echo "<p>Please fill all the filled</p>";
           exit();
         }
         // echo "<p>Thank You for Sumitting the Data</p>";
