@@ -16,13 +16,18 @@
       <input type="text" class="input" name="name" placeholder="Name">
       <br>
       <label for="email" class="labels labelemail"> Enter your email address : </label>
-      <input type="email" class="input" name="email" placeholder="Name">
+      <input type="email" class="input" name="email" placeholder="xyz@abc.com">
       <br>
 
-      <label for="gender" class="labels labelgender"> Enter your Gender : </label>
-      <input type="text" class="input" name="gender" placeholder="Gender">
-      <br>
+      <label for="gender" class="labels labelgender"> Select your Gender : </label>
+      <select type="text" class="input" name="gender" placeholder="Gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
 
+      </select>
+
+      <br>
       <label for="city" class="labels labelcity"> Enter your City : </label>
       <input type="text" class="input" name="city" placeholder="city">
       <br>
@@ -33,7 +38,7 @@
       <br>
       <button action="submit" class="button"> SUBMIT </button>
       <br>
-    </form>
+  </form>
   </div>
 
     <?php
@@ -47,7 +52,7 @@
 
         if(empty($name) || empty($email) || empty($gender) ||  empty($city) || empty($number)){
         //   // header('Location: ../index.php');
-          echo "<p>Please fill all the filled</p>";
+          echo "<p class='error'>Please fill all the filled</p>";
           exit();
         }
         // echo "<p>Thank You for Sumitting the Data</p>";
@@ -59,8 +64,10 @@
         // echo $email;
         // echo "<br>";
         // echo $number;
+      echo "<p class='success'> Submitted Successfully. </p>";
+      
     }else{
-      echo "<p> Something Went Wrong Please Try Again</p>";
+      echo "<p class='error'> Something Went Wrong Please Try Again</p>";
     
     }
     

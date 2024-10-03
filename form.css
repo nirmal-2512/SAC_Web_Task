@@ -36,3 +36,14 @@ body{
   background-color: lightgreen;
   border-radius: 10px;
 }
+
+.sucess{
+  font-size: 22px;
+  color: green;
+
+}
+.error{
+  font-size: 22px;
+  color: red;
+
+}
