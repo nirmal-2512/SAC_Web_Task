@@ -52,7 +52,7 @@
 
         if(empty($name) || empty($email) || empty($gender) ||  empty($city) || empty($number)){
         //   // header('Location: ../index.php');
-          echo "<p class='error'>Please fill all the filled</p>";
+          echo "<p class='error'>Please fill all the fields.</p>";
           exit();
         }
         // echo "<p>Thank You for Sumitting the Data</p>";
@@ -67,7 +67,7 @@
       echo "<p class='success'> Submitted Successfully. </p>";
       
     }else{
-      echo "<p class='error'> Something Went Wrong Please Try Again</p>";
+      echo "<p class='error'> Something Went Wrong Please Try Again.</p>";
     
     }
     
